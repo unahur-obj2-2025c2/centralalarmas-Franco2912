@@ -24,6 +24,7 @@ public class CentralDeMonitoreo implements IObservable{
         }
         Alerta alerta = new Alerta(tipo, nivel);
         registro.put(alerta, observadores.size());
+        notificar(alerta);
     }
 
     public Integer cantidadNotificacionesEnviadas(){

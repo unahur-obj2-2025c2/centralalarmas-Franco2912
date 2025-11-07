@@ -24,7 +24,7 @@ public class Entidad implements IObservador{
         return nombre;
     }
 
-    public List<Alerta> getRegistros() {
+    public List<Alerta> getAlertasRecibidas() {
         return alertasRecibidas;
     }
 
